@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration:none;
+    outline: none;
+    border: none;
+}
+
+
+/*detalles de la imagen logo*/
+section#logo{
+    width: 400px;
+    height: 150px;
+    float:left;
+    opacity: 1;
+}
+
+/*color del cuerpo*/
+body{
+    background-color: rgb(245, 245, 245); 
+    margin: 210px 0px 0px;
+}
+
+/*cabezera con el menu*/
+
+header{
+    background-color: blueviolet;
+}
+
+/*color del texto de la barra*/
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color:rgb(233, 222, 222)
+}
+
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:blueviolet;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    z-index: 1000%;
+    text-transform:capitalize; 
+}
+
+/*color del texto de la barra*/
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color:rgb(252, 252, 252)
+}
+/*color que se vera al pasar el cursor de la barra*/
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(10, 9, 9);
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    font-size: 1.8rem;
+    margin-left: 3rem;
+}
+.btn-neon:hover{
+    background: #a945c7;
+    box-shadow: 0 0 10px #fffeff, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#a945c7);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#a945c7);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+/*ancho del footer y color del texto y fondo*/
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    position: fixed;
+    bottom:0;
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+    color:blueviolet;
+}
+
+.colum1 p{
+    font-size: 17px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 22px;
+    color:blueviolet;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+    color:blueviolet;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.row3{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row3 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row3 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    width: 100%;;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 12px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+/*el tamaño de la pagina*/
+html{
+    zoom: 70%;
+    min-height: 150%;
+    position: relative;
+}
+
+/*lo nuevo*/
+
+article{
+    height: 4200px;
+    background-color: rgb(0, 255, 255);
+    float: left;
+  }
+  
+h4{
+   font-size: 4rem;
+   color: rgb(226, 43, 128);
+   padding: 20px;
+   text-align: center;
+  }
+  
+  
+ h5{
+   font-size: 4rem;
+   color: rgb(79, 42, 165);
+   padding: 20px;
+  }
+  
+  p{
+    font-size: 1.50rem;
+    color: rgb(0, 26, 255);
+    margin: 30px;
+
+  } 
+
+
+  div.galeria img{
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10%;
+} 
+
+div.nacional img{
+    width: 600px;
+    height: 450px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10%;
+    
+}
+
+h3{
+    font-size: 4rem;
+    color: rgb(226, 43, 128);
+    padding: 20px;
+    text-align: center;
+   }
+
+ div.intro img{
+    width: 800px;
+    height: 550px;
+    padding: 10px;
+    margin: 50px;
+    border-radius:5%;
+ }
+
+ div.historia img{
+    width: 350px;
+    height: 400px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10%;
+    
+} 
+
+div.historia p{
+    color: rgb(241, 0, 0);
+    margin-top: 0px;
+    padding-left: 100px;
+    font-size: 2rem;
+    text-align: center;
+    
+}
+
